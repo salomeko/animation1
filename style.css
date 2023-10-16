@@ -1,10 +1,132 @@
-.box {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 2s, height 4s;
+.sky {
+    width: 1000px;
+    height: 600px;
 }
-hover {
-    width: 300px;    
+.sky {
+    position: relative;
+    animation-name: sky;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    animation-delay: 0s;
+}
+@keyframes sky {
+
+    0% {
+      background-color: grey;
+    }
+    
+    33% {
+      background-color: aqua;
+    }
+  
+    66% {
+      background-color: blue;
+    }
+  
+    100% {
+      background-color: grey;
+    }
+  
+  }
+.ground {
+    width: 1000px;
+    height: 250px;
+}
+.ground {
+    position: relative;
+    animation-name: ground;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    animation-delay: 0s;
+    z-index: 1;
+}
+
+@keyframes ground {
+
+  0% {
+    background: brown;
+  }
+  
+  33% {
+    background: lawngreen;
+  }
+
+  66% {
+    background: green;
+  }
+
+  100% {
+    background: brown;
+  }
+
+}
+.sun { 
+    position: absolute;
+    animation-name: sun;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    animation-delay: 0s;
+  }
+
+  @keyframes sun {
+  
+    0% {
+      bottom: 0;
+      left: 700px;
+    }
+    
+    20% {
+      bottom: 640px;
+      left: 700px;
+    }
+  
+    50% {
+      bottom: 340px;
+      left: 40px;
+    }
+  
+    70% {
+      bottom: 0;
+      left: 40px;
+    }
+  
+  }
+  .moon {
+    width: 300px;
     height: 300px;
-}
+    position: absolute;
+    top: 40px;
+  }
+  .moon {
+    animation-name: moon;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0s;
+  }
+  
+  @keyframes moon {
+
+    0% {
+      opacity: 0;
+      left: -100px;
+    }
+    
+    50% {
+      opacity: 0;
+      left: -100px;
+    }
+    
+    90% {
+      opacity: 1;
+      left: 50px;
+    }
+  }
+
