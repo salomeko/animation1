@@ -21,7 +21,7 @@
       background-color: aqua;
     }
   
-    66% {
+    54% {
       background-color: blue;
     }
   
@@ -82,7 +82,7 @@
     }
     
     20% {
-      bottom: 530px;
+      bottom: 430px;
       left: 700px;
     }
   
@@ -92,7 +92,7 @@
     }
   
     70% {
-      bottom: 0;
+      bottom: -150px;
       left: 40px;
     }
   
